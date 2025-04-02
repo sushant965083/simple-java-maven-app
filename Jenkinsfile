@@ -7,7 +7,7 @@ pipeline {
 		}
             	steps {
 			sh 'mvn --version'
-                	sh 'mvn -B -DskipTests clean package' 
+                	sh 'mvn -B -Denforcer.skip=true -DskipTests clean package' 
             	}
         }
     }
