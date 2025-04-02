@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
 		agent {
-			docker { image 'maven:3.9.2-adoptopenjdk-17' }
+			docker { image 'maven:3.8.5-openjdk-17' }
 		}
             	steps {
 			sh 'mvn --version'
